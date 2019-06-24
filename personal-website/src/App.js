@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './components/About';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <hr class="Line"></hr>
         <About />
         <Experience />
+        <Projects />
       </ul>
   );
 }
