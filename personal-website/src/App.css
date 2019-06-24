@@ -1,33 +1,33 @@
-.App {
-  text-align: center;
+/* CSS for website tabs*/
+
+.Tabs{
+  display: inline-block; 
+  list-style-type: none;
+  padding-left: 13%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.MyName{
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #2b2b2b; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul li{
+  display: inline;
 }
 
-.App-link {
-  color: #61dafb;
+.TabLinks{
+  padding-left: 10%;
+  color: #34495e;
+  font-weight: 700;
+  font-size: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TabLinks:hover { 
+  color: #6b92ff;
+}
+
+.Line{
+  width: 200%;
+
 }
