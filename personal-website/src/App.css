@@ -17,7 +17,7 @@ ul li{
 }
 
 .TabLinks{
-  padding-left: 10%;
+  padding-left: 3%;
   color: #34495e;
   font-weight: 700;
   font-size: 1em;
@@ -28,25 +28,17 @@ ul li{
 }
 
 .Line{
-  width: 200%;
+  width: 100%;
 }
 
 /* CSS for About page*/
 
 .Summary{
-  padding-top: 10%;
-}
-
-.AboutHeader{
-  font-weight: normal; 
-  float: right;
-  font-size: 50px;
+  padding-top: 3%;
 }
 
 .MyImage{
   border-radius: 50%;
-  height: 65%;
-  width: 65%;
 }
 
 .Name{
@@ -57,4 +49,31 @@ ul li{
 .Title{
   color: #d7d7d7;
   font-size: 1.5em;
+}
+
+h2{
+  font-weight: normal; 
+  font-size: 50px;
+}
+
+.MyDescription{
+  color: #5e5e5e;
+  font-size: 1.2em;
+}
+
+.Container {
+  display: flex;
+  width: 100%;
+}
+
+.LeftHalf {
+  position: absolute;
+  left: 13%;
+  width: 50%;
+}
+
+.RightHalf {
+  position: absolute;
+  right: 13%;
+  width: 50%;
 }

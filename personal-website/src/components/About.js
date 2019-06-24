@@ -22,19 +22,38 @@ class about extends Component{
 
     render(){
         return(
-            <div class="Summary">
-                <figure>
-                    <img class="MyImage" src={Me} alt={"My Image"}></img>
-                    <br></br><br></br>
-                    <figcaption class="Name">Rishab Narendra</figcaption>
-                    <figcaption class="Title">Software Engineer</figcaption>
+            <section class="Container">
+                <div class="LeftHalf">
+                    <figure>
+                        <img class="MyImage" src={Me} alt={"My Image"}></img>
+                        <br></br><br></br>
+                        <figcaption class="Name">Rishab Narendra</figcaption>
+                        <figcaption class="Title">Software Engineer</figcaption>
+                        <br></br>
+                        <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} bgColor="#6b92ff"/>
+                        <SocialIcon network="github" onClick={() => this.openGitHub()} bgColor="#171515"/>
+                        <SocialIcon network="instagram" onClick={() => this.openInstagram()} bgColor="#b9309d"/>
+                        <SocialIcon network="facebook" onClick={() => this.openFacebook()} bgColor="#3d5a9c"/>
+                    </figure>
+                </div>
+                <div class="RightHalf">
+                    <h2>Biography</h2>
+                    <p class="MyDescription">
+                        My name is Rishab Narendra. Currently I am a Software Development Engineer Intern at Farm Bureau Financial 
+                        Services. I am a junior studying Computer Science at Iowa State University and have a deep passion for machine 
+                        learning and algorithms along with web development and design. These can be illustrated through my projects 
+                        and work experience which required me to learn multiple concepts outside of class. 
+                        <br></br>
+                        I am an engaged, creative student seeking to leverage exemplary leadership skills, analytical
+                        skills, and coding skills through a full-time job starting in December 2019. 
+                    </p>
                     <br></br>
-                    <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} bgColor="#6b92ff"/>
-                    <SocialIcon network="github" onClick={() => this.openGitHub()} bgColor="#171515"/>
-                    <SocialIcon network="instagram" onClick={() => this.openInstagram()} bgColor="#b9309d"/>
-                    <SocialIcon network="facebook" onClick={() => this.openFacebook()} bgColor="#3d5a9c"/>
-                </figure>
-            </div>
+
+                    <i class="fas fa-graduation-cap">  Education</i>
+                    <p>BS in Computer Science, Fall 2019</p>
+                    <p>Iowa State University</p>
+                </div>
+            </section>
         );
     }
 }
