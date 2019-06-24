@@ -1,8 +1,9 @@
 import React, { Component } from 'react'; 
 import Me from './Me.jpg';
 import { SocialIcon } from 'react-social-icons';
+import { Helmet } from 'react-helmet';
 
-class about extends Component{
+class About extends Component{
 
     openLinkedIn(){
         window.open("https://www.linkedin.com/in/rishab-narendra/");
@@ -23,6 +24,9 @@ class about extends Component{
     render(){
         return(
             <section class="Container">
+                <Helmet>
+                    <style>{'body { background-color: pink; }'}</style>
+                </Helmet>
                 <div class="LeftHalf">
                     <figure>
                         <img class="MyImage" src={Me} alt={"My Image"}></img>
@@ -58,4 +62,4 @@ class about extends Component{
     }
 }
 
-export default about; 
+export default About; 

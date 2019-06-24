@@ -1,5 +1,6 @@
 import React from 'react';
 import About from './components/About';
+import Experience from './components/Experience';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <li class="TabLinks">Languages</li>
         <hr class="Line"></hr>
         <About />
+        <Experience />
       </ul>
   );
 }
