@@ -29,5 +29,32 @@ ul li{
 
 .Line{
   width: 200%;
+}
 
+/* CSS for About page*/
+
+.Summary{
+  padding-top: 10%;
+}
+
+.AboutHeader{
+  font-weight: normal; 
+  float: right;
+  font-size: 50px;
+}
+
+.MyImage{
+  border-radius: 50%;
+  height: 65%;
+  width: 65%;
+}
+
+.Name{
+  display: block;
+  font-size: 2em;
+}
+
+.Title{
+  color: #d7d7d7;
+  font-size: 1.5em;
 }
