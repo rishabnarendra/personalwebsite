@@ -2,6 +2,7 @@ import React from 'react';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Languages from './components/Languages';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Experience />
         <Projects />
+        <Languages />
       </ul>
   );
 }
