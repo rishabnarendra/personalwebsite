@@ -18,6 +18,10 @@ function App() {
         <Experience />
         <Projects />
         <Languages />
+        <footer>
+          {'\u00A9'} 2019 by Rishab Narendra. Proudly created with React.  
+          <br></br><br></br>
+        </footer>
       </ul>
   );
 }
