@@ -1,9 +1,14 @@
 import React, { Component } from 'react'; 
 
 class Languages extends Component{
+
+    openReact(){
+        window.open("https://reactjs.org/");
+      }
+
     render(){
         return(
-            <div class="Summary">
+            <div class="LanguageSummary">
                 <h1 class="ExperienceHeader">Languages</h1> 
                 <div class="ProgressBars">
                     <div class="Column">
@@ -93,6 +98,12 @@ class Languages extends Component{
                         </div>
                     </div>
                 </div>
+
+                <footer>
+                    <br></br>
+                    {'\u00A9'} 2019 by Rishab Narendra. Proudly created with <a class="ReactLink" onClick={() => this.openReact()}>React</a>.  
+                    <br></br><br></br>
+                </footer>
             </div>
         );
     }

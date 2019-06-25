@@ -1,9 +1,12 @@
-/* CSS for website tabs*/
+html{
+  scroll-behavior: smooth; 
+}
 
+/* CSS for website tabs*/
+/*
 .Tabs{
   display: inline-block; 
   list-style-type: none;
-  /* padding-left: 13%; */
 }
 
 .MyName{
@@ -33,55 +36,27 @@ ul li{
 
 /* CSS for About page*/
 
-.Summary{
+.AboutSummary{
   padding-top: 3%;
+  text-align: center;
 }
 
 .MyImage{
   border-radius: 50%;
 }
 
-.Name{
-  display: block;
-  font-size: 2em;
-}
-
-.Title{
-  color: #d7d7d7;
-  font-size: 1.5em;
-}
-
-h2{
-  font-weight: normal; 
-  font-size: 50px;
-}
-
 .MyDescription{
+  padding-left: 10%;
+  padding-right: 10%;
   color: #5e5e5e;
   font-size: 1.2em;
 }
 
-/* .Container {
-  display: flex;
-  width: 100%;
-}
-
-.LeftHalf {
-  position: absolute;
-  left: 13%;
-  width: 50%;
-}
-
-.RightHalf {
-  position: absolute;
-  right: 13%;
-  width: 50%;
-} */
-
 /* CSS for Experience page*/
 
-.Experience{
-  background: 100%;
+.ExperienceSummary{
+  text-align: center;
+  padding-right: 5%;
 }
 
 .ExperienceHeader{
@@ -90,19 +65,20 @@ h2{
   font-weight: 200;
 }
 
-.Card {
+.ExperienceCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  padding: 5px 0 10px 20px;
+  padding: 5px 20px 10px 20px;
   text-align: left;
   background-color: #ffffff;
   border-radius: 2%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  width: 600px;
+  width: 65%;
+  margin-left:auto; margin-right:0;
 }
 
-.Position{
+.ExperiencePosition{
   font-family: Montserrat;
   font-size: .9rem;
   font-weight: 700;
@@ -110,17 +86,54 @@ h2{
   text-transform: uppercase;
 }
 
-.Place:hover{
+.ExperiencePlace:hover{
   text-decoration: underline;
 }
 
-.Date{
+.ExperienceDate{
+  font-weight: 100;
+}
+
+/* CSS for Projects page */ 
+
+.ProjectSummary{
+  text-align: center;
+  padding-left: 5%;
+}
+
+.ProjectHeader{
+  font-size: 35px;
+  font-family: Montserrat; 
+  font-weight: 200;
+}
+
+.ProjectCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 5px 20px 10px 20px;
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 2%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 65%;
+}
+
+.ProjectPosition{
+  font-family: Montserrat;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.ProjectDate{
   font-weight: 100;
 }
 
 /*CSS for Languages page*/
 
-.Summary{
+.LanguageSummary{
   padding: 50px 0px 50px 0px;
   text-align: center;
 }
@@ -155,7 +168,7 @@ h2{
    line-height: 5em;
    width: 5em;
    display: block;
-   color: #53777A;
+   color: #6b92ff;
    z-index: 2;
 }
 .Left-Half { 
@@ -175,14 +188,14 @@ h2{
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  border: 0.45em solid #53777A; 
+  border: 0.45em solid #6b92ff; 
   box-sizing: border-box;
- 
 }
+
 .ProgressCircle .FirstHalf {
   position: absolute; 
   clip: rect(0, 5em, 5em, 2.5em);
-  background-color: #53777A;
+  background-color: #6b92ff;
   border-radius: 50%;
   width: 5em;
   height: 5em;
@@ -205,4 +218,12 @@ footer{
   text-align: center;
   font-weight: 300;
   font-size: 0.9em;
+}
+
+.ReactLink{
+  color: #6b92ff;
+}
+
+.ReactLink:hover{
+  text-decoration: underline;
 }

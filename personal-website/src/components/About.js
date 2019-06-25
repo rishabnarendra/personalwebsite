@@ -23,24 +23,20 @@ class About extends Component{
 
     render(){
         return(
-            <section class="Container">
-                <Helmet>
-                    <style>{'body { background-color: pink; }'}</style>
-                </Helmet>
-                <div class="LeftHalf">
-                    <figure>
-                        <img class="MyImage" src={Me} alt={"My Image"}></img>
-                        <br></br><br></br>
-                        <figcaption class="Name">Rishab Narendra</figcaption>
-                        <figcaption class="Title">Software Engineer</figcaption>
-                        <br></br>
+            <div class="AboutSummary">
+                <div class="ImageAndIcons">
+                    <img class="MyImage" src={Me} alt={"My Image"}></img>
+                    <br></br>
+                    <div class="SocialIcons">
+                        <h2>Rishab Narendra</h2>
+                        <h2>Software Engineer</h2>
                         <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} bgColor="#6b92ff"/>
                         <SocialIcon network="github" onClick={() => this.openGitHub()} bgColor="#171515"/>
                         <SocialIcon network="instagram" onClick={() => this.openInstagram()} bgColor="#b9309d"/>
                         <SocialIcon network="facebook" onClick={() => this.openFacebook()} bgColor="#3d5a9c"/>
-                    </figure>
+                    </div>
                 </div>
-                <div class="RightHalf">
+                <div class="Biography">
                     <h2>Biography</h2>
                     <p class="MyDescription">
                         My name is Rishab Narendra. Currently I am a Software Development Engineer Intern at Farm Bureau Financial 
@@ -57,7 +53,7 @@ class About extends Component{
                     <p>BS in Computer Science, Fall 2019</p>
                     <p>Iowa State University</p>
                 </div>
-            </section>
+            </div>  
         );
     }
 }
