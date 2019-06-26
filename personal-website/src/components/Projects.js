@@ -4,7 +4,7 @@ class Projects extends Component{
     render(){
         return(
             <div class="ProjectSummary">
-                <h2 class="ProjectHeader">Projects</h2> 
+                <h2 class="Header">Projects</h2> 
                 <div class="ProjectCard">
                     <h3 class="ProjectPosition">Next Gen 911</h3>
                     <p class="ProjectDate">

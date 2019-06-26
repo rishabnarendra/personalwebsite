@@ -1,5 +1,14 @@
+/* Common CSS */
+
 html{
   scroll-behavior: smooth; 
+}
+
+.Header{
+  font-size: 45px;
+  font-family: Montserrat; 
+  font-weight: 200;
+  color: #313131;
 }
 
 /* CSS for website tabs*/
@@ -7,16 +16,16 @@ html{
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-
 .Main{
+  margin: auto;
   display:flex;
   align-items:center;
   justify-content:center;
-  padding:2%;
+  padding-left: 2%;
+  padding-right: 2%;
   font:14px/1.5 'Open Sans',sans-serif;
   color:#345;
-  background:#f0f2f4;
+  background:#f7f7f7;
 }
 
 input {
@@ -24,9 +33,11 @@ input {
 }
 
 label {
+  margin: auto;
+  width: 50%;
   display: inline-block;
   margin: 0 0 -1px;
-  padding: 15px 25px;
+  padding: 15px 15px;
   font-weight: 600;
   text-align: center;
   color: #abc;
@@ -91,17 +102,31 @@ input:checked + label {
   font-size: 1.2em;
 }
 
+.Resume{  
+  background-color: rgba(247, 220, 79, 1);
+  border: solid rgba(153, 153, 151, 1) 0px; 
+  color: #53835b;
+  font-size: 15px; 
+  padding: 10px 26px;
+}
+
+.Resume:hover{
+  background-color: #015761;
+  color: rgba(247, 220, 79, 1);
+}
+
+.Resume:focus {
+  outline: none;
+}
+
 /* CSS for Experience page*/
 
 .ExperienceSummary{
   text-align: center;
   padding-right: 5%;
-}
-
-.ExperienceHeader{
-  font-size: 35px;
-  font-family: Montserrat; 
-  font-weight: 200;
+  background:#f7f7f7;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .ExperienceCard {
@@ -138,6 +163,9 @@ input:checked + label {
 .ProjectSummary{
   text-align: center;
   padding-left: 5%;
+  background:#ffffff;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .ProjectHeader{
@@ -175,6 +203,9 @@ input:checked + label {
 .LanguageSummary{
   padding: 50px 0px 50px 0px;
   text-align: center;
+  background:#f7f7f7;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .ProgressCircle {

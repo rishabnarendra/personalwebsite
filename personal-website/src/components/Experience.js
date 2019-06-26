@@ -18,10 +18,7 @@ class Experience extends Component{
     render(){
         return(
             <div class="ExperienceSummary">
-                <Helmet>
-                    <style>{'body { background-color: #f7f7f7 !important; }'}</style>
-                </Helmet>
-                <h2 class="ExperienceHeader">Experience</h2>
+                <h2 class="Header">Experience</h2>
                 <div class="ExperienceCard">
                     <h3 class="ExperiencePosition">Software Development Engineer Intern</h3>
                     <p class="ExperiencePlace" onClick={() => this.openFarmBureau()}>Farm Bureau Financial Services</p>

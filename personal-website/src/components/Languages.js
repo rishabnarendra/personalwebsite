@@ -9,7 +9,8 @@ class Languages extends Component{
     render(){
         return(
             <div class="LanguageSummary">
-                <h1 class="ExperienceHeader">Languages</h1> 
+                <h1 class="Header">Languages</h1> 
+                <br />
                 <div class="ProgressBars">
                     <div class="Column">
                         <h4>HTML</h4>
@@ -100,9 +101,9 @@ class Languages extends Component{
                 </div>
 
                 <footer>
-                    <br></br>
+                    <br />
                     {'\u00A9'} 2019 by Rishab Narendra. Proudly created with <a class="ReactLink" onClick={() => this.openReact()}>React</a>.  
-                    <br></br><br></br>
+                    <br />
                 </footer>
             </div>
         );
