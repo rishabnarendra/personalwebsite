@@ -8,18 +8,26 @@ import './App.css';
 function App() {
 
   return (  
-      <div class="Tabs">
-        {/* <li class="MyName">Rishab Narendra</li>
-        <li class="TabLinks">About</li>
-        <li class="TabLinks">Work</li>
-        <li class="TabLinks">Projects</li>
-        <li class="TabLinks">Languages</li>
-        <hr class="Line"></hr> */}
-        <About />
-        <Experience />
-        <Projects />
-        <Languages />
-      </div>
+    <div>
+      <main class="Main">
+        <input id="tab1" type="radio" name="tabs" />
+        <label for="tab1">About</label>
+
+        <input id="tab2" type="radio" name="tabs" />
+        <label for="tab2">Experience</label>
+
+        <input id="tab3" type="radio" name="tabs" />
+        <label for="tab3">Projects</label>
+
+        <input id="tab4" type="radio" name="tabs" />
+        <label for="tab4">Languages</label>
+        <hr />
+      </main>
+      <About />
+      <Experience />
+      <Projects />
+      <Languages />
+    </div>
   );
 }
 

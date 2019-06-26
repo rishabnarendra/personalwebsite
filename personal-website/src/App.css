@@ -3,35 +3,74 @@ html{
 }
 
 /* CSS for website tabs*/
-/*
-.Tabs{
-  display: inline-block; 
-  list-style-type: none;
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+
+.Main{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2%;
+  font:14px/1.5 'Open Sans',sans-serif;
+  color:#345;
+  background:#f0f2f4;
 }
 
-.MyName{
-  font-weight: 700;
-  font-size: 1.2em;
-  color: #2b2b2b; 
+input {
+  display: none;
 }
 
-ul li{
-  display: inline;
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #abc;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #fff;
 }
 
-.TabLinks{
-  padding-left: 3%;
-  color: #34495e;
-  font-weight: 700;
-  font-size: 1em;
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
 }
 
-.TabLinks:hover { 
+label[for*='1']:before { content: '\f007'; }
+label[for*='2']:before { content: '\f0b1'; }
+label[for*='3']:before { content: '\f0eb'; }
+label[for*='4']:before { content: '\f121'; }
+
+label:hover {
+  color: #789;
+  cursor: pointer;
+}
+
+input:checked + label {
   color: #6b92ff;
+  border: 1px solid #abc;
+  border-top: 2px solid #6b92ff;
+  border-bottom: 1px solid #fff;
 }
 
-.Line{
-  width: 100%;
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  label {
+    padding: 15px;
+  }
 }
 
 /* CSS for About page*/
