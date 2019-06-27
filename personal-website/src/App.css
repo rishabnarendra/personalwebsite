@@ -138,6 +138,10 @@ input:checked + label {
   border-bottom: 1px solid #fff;
 }
 
+.Tabs{
+  text-decoration: none;
+}
+
 @media screen and (max-width: 800px) {
   label {
     font-size: 0;

@@ -11,22 +11,30 @@ function App() {
     <div>
       <main class="Main">
         <input id="tab1" type="radio" name="tabs" />
-        <label for="tab1">About</label>
+        <label for="tab1"><a class="Tabs" href="#About">About</a></label>
 
         <input id="tab2" type="radio" name="tabs" />
-        <label for="tab2">Experience</label>
+        <label for="tab2"><a class="Tabs" href="#Experience">Experience</a></label>
 
         <input id="tab3" type="radio" name="tabs" />
-        <label for="tab3">Projects</label>
+        <label for="tab3"><a class="Tabs" href="#Projects">Projects</a></label>
 
         <input id="tab4" type="radio" name="tabs" />
-        <label for="tab4">Languages</label>
+        <label for="tab4"><a class="Tabs" href="#Languages">Languages</a></label>
         <hr />
       </main>
-      {/* <About /> */}
-      <Experience />
-      <Projects />
-      <Languages />
+      <div id="About">
+        {/* <About /> */}
+      </div>
+      <div id="Experience"> 
+        <Experience />
+      </div>
+      <div id="Projects">
+        <Projects />
+      </div>
+      <div id="Languages">
+        <Languages />
+      </div>
     </div>
   );
 }
