@@ -23,7 +23,7 @@ function App() {
         <label for="tab4">Languages</label>
         <hr />
       </main>
-      <About />
+      {/* <About /> */}
       <Experience />
       <Projects />
       <Languages />

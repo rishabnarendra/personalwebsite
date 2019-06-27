@@ -6,11 +6,17 @@ class Languages extends Component{
         window.open("https://reactjs.org/");
       }
 
+    scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
     render(){
         return(
             <div class="LanguageSummary">
-                <h1 class="Header">Languages</h1> 
-                <br />
+                <div class="foo">
+                    <span class="letter" data-letter="Languages">Languages</span>
+                </div>
                 <div class="ProgressBars">
                     <div class="Column">
                         <h4>HTML</h4>
@@ -103,6 +109,7 @@ class Languages extends Component{
                 <footer>
                     <br />
                     {'\u00A9'} 2019 by Rishab Narendra. Proudly created with <a class="ReactLink" onClick={() => this.openReact()}>React</a>.  
+                    <i class="fas fa-arrow-circle-up" onClick={() => this.scrollToTop()}></i>
                     <br />
                 </footer>
             </div>

@@ -30,7 +30,7 @@ class About extends Component{
             <div class="AboutSummary">
                 <div class="ImageAndIcons">
                     <img class="MyImage" src={Me} alt={"My Image"}></img>
-                    <br></br>
+                    <br />
                     <div class="SocialIcons">
                         <h2>Rishab Narendra</h2>
                         <h2>Software Engineer</h2>
@@ -44,20 +44,16 @@ class About extends Component{
                         I am an engaged, creative student seeking to leverage exemplary leadership skills, analytical
                         skills, and coding skills through a full-time job starting in December 2019. 
                     </p>
-                    <button class="Resume" onClick={() => this.openResume()}>View Full Resume</button>
-                    <br></br>
-
-                        <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} bgColor="#6b92ff"/>
-                        <SocialIcon network="github" onClick={() => this.openGitHub()} bgColor="#171515"/>
-                        <SocialIcon network="instagram" onClick={() => this.openInstagram()} bgColor="#b9309d"/>
-                        <SocialIcon network="facebook" onClick={() => this.openFacebook()} bgColor="#3d5a9c"/>
+                        <div class="wrap">
+                            <a class="button" onClick={() => this.openResume()}>View Full Resume</a>
+                        </div>
+                        <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} style={{ height: 75, width: 75 }} bgColor="#6b92ff"/>
+                        <SocialIcon network="github" onClick={() => this.openGitHub()} style={{ height: 75, width: 75 }} bgColor="#171515"/>
+                        <SocialIcon network="instagram" onClick={() => this.openInstagram()} style={{ height: 75, width: 75 }} bgColor="#b9309d"/>
+                        <SocialIcon network="facebook" onClick={() => this.openFacebook()} style={{ height: 75, width: 75 }} bgColor="#3d5a9c"/>
                     </div>
-
-                    <i class="fas fa-graduation-cap">  Education</i>
-                    <p>BS in Computer Science, Fall 2019</p>
-                    <p>Iowa State University</p>
                 </div>
-                
+                <br /><br />
             </div>  
         );
     }

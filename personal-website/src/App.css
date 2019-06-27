@@ -11,6 +11,76 @@ html{
   color: #313131;
 }
 
+div.foo{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 8em;
+  margin: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
 /* CSS for website tabs*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
@@ -62,9 +132,9 @@ label:hover {
 }
 
 input:checked + label {
-  color: #6b92ff;
+  color: #00B4F1;
   border: 1px solid #abc;
-  border-top: 2px solid #6b92ff;
+  border-top: 2px solid #00B4F1;
   border-bottom: 1px solid #fff;
 }
 
@@ -76,12 +146,14 @@ input:checked + label {
     margin: 0;
     font-size: 18px;
   }
+  .letter{ font-size: 8em; }
 }
 
 @media screen and (max-width: 500px) {
   label {
     padding: 15px;
   }
+  .letter{ font-size: 3.5em; }
 }
 
 /* CSS for About page*/
@@ -102,21 +174,32 @@ input:checked + label {
   font-size: 1.2em;
 }
 
-.Resume{  
-  background-color: rgba(247, 220, 79, 1);
-  border: solid rgba(153, 153, 151, 1) 0px; 
-  color: #53835b;
-  font-size: 15px; 
-  padding: 10px 26px;
+.wrap {
+  text-align: center;
 }
 
-.Resume:hover{
-  background-color: #015761;
-  color: rgba(247, 220, 79, 1);
+.wrap a {
+  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+  display: block;
+  margin: 20px auto;
+  max-width: 180px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 30px;
 }
 
-.Resume:focus {
-  outline: none;
+a.button {
+  color: rgba(30, 22, 54, 0.6);
+  box-shadow: #00B4F1 0 0px 0px 2px inset;
+}
+
+a.button:hover {
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: #00B4F1 0 0px 0px 40px inset;
 }
 
 /* CSS for Experience page*/
@@ -125,13 +208,13 @@ input:checked + label {
   text-align: center;
   padding-right: 5%;
   background:#f7f7f7;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-bottom: 3%;
 }
 
 .ExperienceCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  padding: 5px 20px 10px 20px;
+  padding: 5px 20px 30px 20px;
   text-align: left;
   background-color: #ffffff;
   border-radius: 2%;
@@ -140,6 +223,14 @@ input:checked + label {
   background-size: cover;
   width: 65%;
   margin-left:auto; margin-right:0;
+  border: 1px solid #00B4F1;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.ExperienceCard:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .ExperiencePosition{
@@ -150,12 +241,24 @@ input:checked + label {
   text-transform: uppercase;
 }
 
-.ExperiencePlace:hover{
-  text-decoration: underline;
-}
-
 .ExperienceDate{
   font-weight: 100;
+}
+
+.FlipCard:hover .ExperienceCard {
+  transform: rotateY(180deg);
+}
+
+.ExperienceCardFront, .ExperienceCardBack {
+  backface-visibility: hidden;
+}
+
+.ExperienceCardFront{
+  position: absolute;
+}
+
+.ExperienceCardBack {
+  transform: rotateY(180deg);
 }
 
 /* CSS for Projects page */ 
@@ -164,7 +267,7 @@ input:checked + label {
   text-align: center;
   padding-left: 5%;
   background:#ffffff;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-bottom: 3%;
 }
 
@@ -184,6 +287,11 @@ input:checked + label {
   background-position: 50% 50%;
   background-size: cover;
   width: 65%;
+  border: 1px solid #00B4F1;
+}
+
+.ProjectCard:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .ProjectPosition{
@@ -204,7 +312,7 @@ input:checked + label {
   padding: 50px 0px 50px 0px;
   text-align: center;
   background:#f7f7f7;
-  padding-top: 3%;
+  padding-top: 1%;
   padding-bottom: 3%;
 }
 
@@ -238,7 +346,7 @@ input:checked + label {
    line-height: 5em;
    width: 5em;
    display: block;
-   color: #6b92ff;
+   color: #00B4F1;
    z-index: 2;
 }
 .Left-Half { 
@@ -258,14 +366,14 @@ input:checked + label {
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  border: 0.45em solid #6b92ff; 
+  border: 0.45em solid #00B4F1; 
   box-sizing: border-box;
 }
 
 .ProgressCircle .FirstHalf {
   position: absolute; 
   clip: rect(0, 5em, 5em, 2.5em);
-  background-color: #6b92ff;
+  background-color: #00B4F1;
   border-radius: 50%;
   width: 5em;
   height: 5em;
@@ -291,9 +399,15 @@ footer{
 }
 
 .ReactLink{
-  color: #6b92ff;
+  color: #00B4F1;
 }
 
 .ReactLink:hover{
   text-decoration: underline;
+}
+
+i{
+  float: right;
+  font-size: 2.5em;
+  background-color:transparent;
 }
