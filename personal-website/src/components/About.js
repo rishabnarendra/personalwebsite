@@ -28,31 +28,20 @@ class About extends Component{
     render(){
         return(
             <div class="AboutSummary">
-                <div class="ImageAndIcons">
-                    <img class="MyImage" src={Me} alt={"My Image"}></img>
-                    <br />
-                    <div class="SocialIcons">
-                        <h2>Rishab Narendra</h2>
-                        <h2>Software Engineer</h2>
-
-                        <p class="MyDescription">
-                        My name is Rishab Narendra. Currently I am a Software Development Engineer Intern at Farm Bureau Financial 
-                        Services. I am a junior studying Computer Science at Iowa State University and have a deep passion for machine 
-                        learning and algorithms along with web development and design. These can be illustrated through my projects 
-                        and work experience which required me to learn multiple concepts outside of class. 
-                        <br></br>
-                        I am an engaged, creative student seeking to leverage exemplary leadership skills, analytical
-                        skills, and coding skills through a full-time job starting in December 2019. 
-                    </p>
-                        <div class="wrap">
-                            <a class="button" onClick={() => this.openResume()}>View Full Resume</a>
-                        </div>
-                        <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} style={{ height: 75, width: 75 }} bgColor="#6b92ff"/>
-                        <SocialIcon network="github" onClick={() => this.openGitHub()} style={{ height: 75, width: 75 }} bgColor="#171515"/>
-                        <SocialIcon network="instagram" onClick={() => this.openInstagram()} style={{ height: 75, width: 75 }} bgColor="#b9309d"/>
-                        <SocialIcon network="facebook" onClick={() => this.openFacebook()} style={{ height: 75, width: 75 }} bgColor="#3d5a9c"/>
-                    </div>
+                <div class="foo">
+                    <span class="letter" data-letter="Hi! I'm Rishab Narendra.">Hi! I'm Rishab Narendra.</span>
                 </div>
+                <div class="foo2">
+                    <span class="letter2" data-letter="Software Developer.">Software Developer.</span>
+                </div>
+                <div class="wrap">
+                    <a class="button" onClick={() => this.openResume()}>View Full Resume</a>
+                </div>
+
+                <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} style={{ height: 45, width: 45 }} bgColor="#ffffff"/>
+                <SocialIcon network="github" onClick={() => this.openGitHub()} style={{ height: 45, width: 45 }} bgColor="rgb(5, 5, 5)"/>
+                <SocialIcon network="instagram" onClick={() => this.openInstagram()} style={{ height: 45, width: 45 }} bgColor="#ffffff"/>
+                <SocialIcon network="facebook" onClick={() => this.openFacebook()} style={{ height: 45, width: 45 }} bgColor="rgb(5, 5, 5)"/>
                 <br /><br />
             </div>  
         );

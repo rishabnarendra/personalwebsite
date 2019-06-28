@@ -81,6 +81,78 @@ div.foo{
     skew(0deg,22deg);
 }
 
+/* Headers but smaller and black font */
+
+div.foo2{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.letter2{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 4em;
+  margin: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+
+.letter2:before, .letter2:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+
+.letter2, .letter2:before, .letter2:after{
+  transition: all 0.3s ease-in-out;
+}
+
+.letter2:before{
+  color: rgb(5, 5, 5);
+  text-shadow: 
+    -1px 0px 1px rgb(5, 5, 5),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+
+.letter2:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+
+.letter2:hover:before{
+  color: rgb(5, 5, 5);
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+
+.letter2:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
 /* CSS for website tabs*/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
@@ -110,7 +182,7 @@ label {
   padding: 15px 15px;
   font-weight: 600;
   text-align: center;
-  color: #abc;
+  color: #404040;
   border: 1px solid transparent;
   border-bottom: 1px solid #fff;
 }
@@ -131,7 +203,7 @@ label:hover {
   cursor: pointer;
 }
 
-input:checked + label {
+input:checked + label{
   color: #00B4F1;
   border: 1px solid #abc;
   border-top: 2px solid #00B4F1;
@@ -151,6 +223,7 @@ input:checked + label {
     font-size: 18px;
   }
   .letter{ font-size: 8em; }
+  .letter2{ font-size: 4em; }
 }
 
 @media screen and (max-width: 500px) {
@@ -158,6 +231,7 @@ input:checked + label {
     padding: 15px;
   }
   .letter{ font-size: 3.5em; }
+  .letter2{ font-size: 1.5em; }
 }
 
 /* CSS for About page*/
@@ -165,17 +239,12 @@ input:checked + label {
 .AboutSummary{
   padding-top: 3%;
   text-align: center;
+  background-color: #00B4F1;
 }
 
-.MyImage{
-  border-radius: 50%;
-}
-
-.MyDescription{
-  padding-left: 10%;
-  padding-right: 10%;
-  color: #5e5e5e;
-  font-size: 1.2em;
+.MyIntro{
+  font-size: 5em;
+  color: #ffffff;
 }
 
 .wrap {
@@ -193,17 +262,17 @@ input:checked + label {
   max-width: 180px;
   text-decoration: none;
   border-radius: 4px;
-  padding: 20px 30px;
+  padding: 10px 0px;
 }
 
 a.button {
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: #00B4F1 0 0px 0px 2px inset;
+  color: #ffffff;
+  box-shadow: #ffffff 0 0px 0px 2px inset;
 }
 
 a.button:hover {
-  color: rgba(255, 255, 255, 0.85);
-  box-shadow: #00B4F1 0 0px 0px 40px inset;
+  color: #00B4F1;
+  box-shadow: #ffffff 0 0px 0px 40px inset;
 }
 
 /* CSS for Experience page*/
@@ -218,7 +287,7 @@ a.button:hover {
 
 .ExperienceCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  padding: 5px 20px 30px 20px;
+  padding: 5px 40px 50px 20px;
   text-align: left;
   background-color: #ffffff;
   border-radius: 2%;

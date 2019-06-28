@@ -18,11 +18,11 @@ class Experience extends Component{
                         </div>
                         <div class="ExperienceCardBack">
                             <p>
-                                Architected and built a self-service tool for Claims teams using Robotic Process Automation (RPA) to automate payments and receipts
+                                ● Architected and built a self-service tool for Claims teams using Robotic Process Automation (RPA) to automate payments and receipts
                                 <br />
-                                Replaced manual, repetitive processes; reduced business costs for the company
+                                ● Replaced manual, repetitive processes; reduced business costs for the company
                                 <br />
-                                Used C#, SQL, HTML/CSS, JavaScript, AA Enterprise Client, and Jenkins
+                                ● Used C#, SQL, HTML/CSS, JavaScript, AA Enterprise Client, and Jenkins
                             </p>
                         </div>
                     </div>
@@ -38,11 +38,11 @@ class Experience extends Component{
                         </div>
                         <div class="ExperienceCardBack">
                             <p>
-                                Designed a web application to interact with X3P (XML 3D Surface Profiles) files
+                                ● Designed a web application to interact with X3P (XML 3D Surface Profiles) files
                                 <br />
-                                Created an HTTP REST API for abstracting interactions 
+                                ● Created an HTTP REST API for abstracting interactions 
                                 <br />
-                                Used Java, C#, SQL, HTML/CSS, JavaScript
+                                ● Used Java, C#, SQL, HTML/CSS, JavaScript
                             </p>
                         </div>
                     </div>
@@ -58,11 +58,11 @@ class Experience extends Component{
                         </div>
                         <div class="ExperienceCardBack">
                             <p>
-                                Designed and built a mobile application (iOS & Android) for Marketing and Distribution teams 
+                                ● Designed and built a mobile application (iOS & Android) for Marketing and Distribution teams 
                                 <br />
-                                Provides easy access for insurance customers information and quick payments
+                                ● Provides easy access for insurance customers information and quick payments
                                 <br />
-                                Application published on Google Play and App Store
+                                ● Application published on Google Play and App Store
                             </p>
                         </div>
                     </div>
@@ -78,9 +78,9 @@ class Experience extends Component{
                         </div>
                         <div class="ExperienceCardBack">
                             <p>
-                                Teaching Instructor for Introduction to Web Programming
+                                ● Teaching Instructor for Introduction to Web Programming
                                 <br />
-                                Responsibilities include teaching fundamental web design concepts in HTML/CSS and JavaScript, managing
+                                ● Responsibilities include teaching fundamental web design concepts in HTML/CSS and JavaScript, managing
                                 course infrastructure, and mentoring course students through semester projects
                             </p>
                         </div>
