@@ -132,6 +132,7 @@ input:checked + label{
     font-size: 18px;
   }
   .letter{ font-size: 8em; }
+  .letter1{ font-size: 4em; }
   .letter2{ font-size: 4em; }
 }
 
