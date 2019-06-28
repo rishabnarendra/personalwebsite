@@ -29,7 +29,7 @@ class About extends Component{
         return(
             <div class="AboutSummary">
                 <div class="foo">
-                    <span class="letter" data-letter="Hi! I'm Rishab Narendra.">Hi! I'm Rishab Narendra.</span>
+                    <span class="letter1" data-letter="Hi! I'm Rishab Narendra.">Hi! I'm Rishab Narendra.</span>
                 </div>
                 <div class="foo2">
                     <span class="letter2" data-letter="Software Developer.">Software Developer.</span>
