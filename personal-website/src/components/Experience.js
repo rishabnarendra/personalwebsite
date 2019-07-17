@@ -12,7 +12,7 @@ class Experience extends Component{
                 <div class="FlipCard">
                     <div class="ExperienceCard">
                         <div class="ExperienceCardFront">
-                            <h3 class="ExperiencePosition">Software Development Engineer Intern</h3>
+                            <h3 class="ExperiencePosition">Software Development Intern</h3>
                             <p><a class="ExperiencePlace">Farm Bureau Financial Services</a></p>
                             <p class="ExperienceDate">May 2019 - August 2019  *  Des Moines, IA</p>
                         </div>
@@ -32,7 +32,7 @@ class Experience extends Component{
                 <div class="FlipCard">
                     <div class="ExperienceCard">
                         <div class="ExperienceCardFront">
-                            <h3 class="ExperiencePosition">Software Development Engineer Intern</h3>
+                            <h3 class="ExperiencePosition">Software Development Intern</h3>
                             <p><a class="ExperiencePlace">Center for Statistics and Applications in Forensic Evidence</a></p>
                             <p class="ExperienceDate">September 2018 - December 2018  *  Ames, IA</p>
                         </div>
@@ -52,17 +52,21 @@ class Experience extends Component{
                 <div class="FlipCard">
                     <div class="ExperienceCard">
                         <div class="ExperienceCardFront">
-                            <h3 class="ExperiencePosition">Software Development Engineer Intern</h3>
+                            <h3 class="ExperiencePosition">Software Development Intern</h3>
                             <p><a class="ExperiencePlace">Farm Bureau Financial Services</a></p>
                             <p class="ExperienceDate">May 2018 - August 2018  *  Des Moines, IA</p>
                         </div>
                         <div class="ExperienceCardBack">
                             <p>
-                                ● Designed and built a mobile application (iOS & Android) for Marketing and Distribution teams 
+                                ● Designed and built a mobile application (iOS & Android) that saves the business 200,000 annually 
+                                <br />
+                                ● Application won Novarica Research Council Impact Award 
                                 <br />
                                 ● Provides easy access for insurance customers information and quick payments
                                 <br />
                                 ● Application published on Google Play and App Store
+                                <br />
+                                ● Used C#, SQL, HTML/CSS, TypeScript, Ionic, and Jenkins 
                             </p>
                         </div>
                     </div>
