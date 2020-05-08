@@ -1,5 +1,4 @@
 import React, { Component } from 'react'; 
-import Me from './Me.jpg';
 import { SocialIcon } from 'react-social-icons';
 import MyResume from './Rishab_Narendra.Resume.pdf';
 
@@ -28,12 +27,12 @@ class About extends Component{
     render(){
         return(
             <div class="AboutSummary">
-                <span class="letter1" data-letter="Hi! I'm Rishab Narendra.">Hi! I'm Rishab Narendra.</span>
+                <span class="letter1" data-letter="Hi! I'm Rishab Narendra.">Hi! I'm Rishab Narendra.</span><br />
                 <span class="letter2" data-letter="Software Developer">Software Developer</span>
                 <div class="wrap">
                     <a class="button" onClick={() => this.openResume()}>View Full Resume</a>
                 </div>
-
+                <img style={{width: '12%'}} src="/Me.jpeg" /><br /><br />
                 <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
                 <SocialIcon network="github" onClick={() => this.openGitHub()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
                 <SocialIcon network="instagram" onClick={() => this.openInstagram()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>

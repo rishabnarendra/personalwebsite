@@ -8,17 +8,11 @@ html{
   scroll-behavior: smooth; 
 }
 
-.Header{
-  font-size: 45px;
-  font-family: Montserrat; 
-  font-weight: 200;
-  color: #313131;
-}
-
 .letter{
+  font-family: monospace !important;
   display: inline-block;
   font-weight: 900;
-  font-size: 8em;
+  font-size: 5em;
   margin: 0.2em;
   position: relative;
   color: #00B4F1;
@@ -30,9 +24,10 @@ html{
 /* Headers but smaller */
 
 .letter1{
+  font-family: monospace !important;
   display: inline-block;
   font-weight: 900;
-  font-size: 8em;
+  font-size: 5em;
   margin: 0.2em;
   position: relative;
   color: #ffffff;
@@ -42,6 +37,7 @@ html{
 }
 
 .letter2{
+  font-family: monospace !important;
   font-weight: 900;
   font-size: 4em;
   margin: 0.2em;
@@ -165,51 +161,36 @@ a.button:hover {
 
 /* CSS for Experience page*/
 
-.ExperienceSummary{
+.Heading{
   text-align: center;
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-bottom: 2%;
+}
+
+.ExperienceSummary{
+  padding-left: 9%;
+  padding-right: 9%;
+  font-family: monospace;
+}
+
+.ExperienceCardFront{
+  text-align: center;
+  color: #ffffff;
+}
+
+.ExperienceCardBack{
+  text-align: left;
+  color: #ffffff;
 }
 
 .ExperienceCard {
-  padding: 5px 40px 50px 20px;
-  text-align: left;
   background-color: #000000;
   border-radius: 2%;
-  border: 3px solid red;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   perspective: 1000px;
 }
 
 .ExperiencePosition{
-  font-family: Montserrat;
-  font-size: .9rem;
-  font-weight: 700;
-  line-height: 1.5;
-  text-transform: uppercase;
-}
-
-.ExperienceDate{
-  font-weight: 100;
-}
-
-.FlipCard:hover .ExperienceCard {
-  transform: rotateY(180deg);
-}
-
-.ExperienceCardFront, .ExperienceCardBack {
-  backface-visibility: hidden;
-  color: #ffffff;
-}
-
-.ExperienceCardFront{
-  position: absolute;
-}
-
-.ExperienceCardBack {
-  transform: rotateY(180deg);
+  font-size: 1.7em;
 }
 
 /* CSS for Projects page */ 
@@ -221,15 +202,13 @@ a.button:hover {
   padding-right: 9%;
 }
 
-.ProjectHeader{
-  font-size: 35px;
-  font-family: Montserrat; 
-  font-weight: 200;
+.Projects{
+  font-family: monospace;
 }
 
 .ProjectCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  padding: 5px 20px 10px 20px;  
+  padding: 5px 40px 10px 40px;  
   background-color: #000000;
   border-radius: 3%;
   border: 3px solid red;
@@ -239,27 +218,33 @@ a.button:hover {
   box-shadow: 0 0 11px #ffffff; 
 }
 
-.ProjectPosition{
+.ProjectName{
   font-family: Montserrat;
-  font-size: .9rem;
+  font-size: 1.3em;
   font-weight: 700;
   line-height: 1.5;
   color: #ffffff;
   text-transform: uppercase;
 }
 
-.ProjectDate{
+.ProjectDescription{
   font-weight: 100;
+  font-size: 1em;
   color: #ffffff;
 }
 
 /*CSS for Languages page*/
 
 .LanguageSummary{
+  font-family: monospace !important; 
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 2%;
+}
+
+h4{
+  font-size: 1.2em;
 }
 
 .ProgressCircle {

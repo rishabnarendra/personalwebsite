@@ -29,13 +29,11 @@ class Projects extends Component{
     render(){
         return(
             <div class="ProjectSummary">
-                <div class="foo">
-                    <span class="letter" data-letter="Projects">Projects</span>
-                </div>
-                <div>
+                <span class="letter" data-letter="Projects">Projects</span>
+                <div class="Projects">
                     <div class="ProjectCard">
-                        <h3 class="ProjectPosition">Pong Game</h3>
-                        <p class="ProjectDate">
+                        <h3 class="ProjectName">Pong Game</h3>
+                        <p class="ProjectDescription">
                             A Java implementation of the classic pong game. However, instead of a score system, the person who loses a point
                             also loses a portion of their paddle. The game is over when the paddle has been sliced completely.  
                         </p>
@@ -46,8 +44,8 @@ class Projects extends Component{
                     <br></br><br></br>
 
                     <div class="ProjectCard">
-                        <h3 class="ProjectPosition">Snake Game</h3>
-                        <p class="ProjectDate">
+                        <h3 class="ProjectName">Snake Game</h3>
+                        <p class="ProjectDescription">
                             A Python implementation of the classic snake game using the Pygame module. 
                         </p>
                         <div class="wrap">
@@ -57,8 +55,8 @@ class Projects extends Component{
                     <br></br><br></br>
 
                     <div class="ProjectCard">
-                        <h3 class="ProjectPosition">Latest NBA</h3>
-                        <p class="ProjectDate">
+                        <h3 class="ProjectName">Latest NBA</h3>
+                        <p class="ProjectDescription">
                             I'm a big NBA fan. This application provides me with the latest game data and NBA standings by conference.  
                         </p>
                         <div class="wrap">
@@ -68,8 +66,8 @@ class Projects extends Component{
                     <br></br><br></br>
 
                     <div class="ProjectCard">
-                        <h3 class="ProjectPosition">Sorting Visualizer</h3>
-                        <p class="ProjectDate">
+                        <h3 class="ProjectName">Sorting Visualizer</h3>
+                        <p class="ProjectDescription">
                             A JavaScript app that animates the sorting process for many famous algorithms. 
                         </p>
                         <div class="wrap">
@@ -79,8 +77,8 @@ class Projects extends Component{
                     <br></br><br></br>
 
                     <div class="ProjectCard">
-                        <h3 class="ProjectPosition">Covid-19 Tracker</h3>
-                        <p class="ProjectDate">
+                        <h3 class="ProjectName">Covid-19 Tracker</h3>
+                        <p class="ProjectDescription">
                         A JavaScript app that uses APIs to view live statistics of coronavirus infections around the world.
                         </p>
                         <div class="wrap">
@@ -90,8 +88,8 @@ class Projects extends Component{
                     <br></br><br></br>
 
                     <div class="ProjectCard">
-                        <h3 class="ProjectPosition">Next Gen 911</h3>
-                        <p class="ProjectDate">
+                        <h3 class="ProjectName">Next Gen 911</h3>
+                        <p class="ProjectDescription">
                             An Android app that uses publicly available emergency service APIs near a caller’s location to allow faster
                             response time during 911 emergencies.
                         </p>
@@ -99,11 +97,11 @@ class Projects extends Component{
                             <a class="button">Private Repository</a>
                         </div>
                     </div>
-                <br></br><br></br>
+                    <br></br><br></br>
 
                     <div class="ProjectCard">
-                        <h3 class="ProjectPosition">Ninja-Game</h3>
-                        <p class="ProjectDate">
+                        <h3 class="ProjectName">Ninja-Game</h3>
+                        <p class="ProjectDescription">
                             An Swift game comparable to Mario.
                         </p>
                         <div class="wrap">
@@ -113,14 +111,15 @@ class Projects extends Component{
                     <br></br><br></br>
 
                     <div class="ProjectCard">
-                        <h3 class="ProjectPosition">Salt Analysis Simulator</h3>
-                        <p class="ProjectDate">
+                        <h3 class="ProjectName">Salt Analysis Simulator</h3>
+                        <p class="ProjectDescription">
                             A C++ program that simulates the lab salt analysis process by performing preliminary, dilute, and concentrated acid tests.
                         </p>
                         <div class="wrap">
                             <a class="button" onClick={() => this.openProject('Salt')}>View Code</a>
                         </div>
                     </div>
+                    <br />
                 </div>
             </div>
         );
