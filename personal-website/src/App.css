@@ -167,8 +167,8 @@ a.button:hover {
 
 .ExperienceSummary{
   text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
   padding-bottom: 2%;
 }
 
@@ -216,9 +216,9 @@ a.button:hover {
 
 .ProjectSummary{
   text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
   padding-top: 2%;
+  padding-left: 9%;
+  padding-right: 9%;
 }
 
 .ProjectHeader{
@@ -229,8 +229,7 @@ a.button:hover {
 
 .ProjectCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  padding: 5px 20px 10px 20px;
-  text-align: left;
+  padding: 5px 20px 10px 20px;  
   background-color: #000000;
   border-radius: 3%;
   border: 3px solid red;

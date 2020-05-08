@@ -15,7 +15,7 @@ class Languages extends Component{
         return(
             <div class="LanguageSummary">
                 <span class="letter" data-letter="Languages">Languages</span>
-                <div class="ProgressBars">
+                <div>
                     <div class="Column">
                         <h4>HTML</h4>
                         <div class="ProgressCircle p95">
