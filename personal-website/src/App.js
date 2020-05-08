@@ -7,14 +7,6 @@ import './App.css';
 
 function App() {
 
-  function getOffset(el) {
-    const rect = el.getBoundingClientRect();
-    return {
-      left: rect.left + window.scrollX,
-      top: rect.top + window.scrollY
-    };
-  }
-
   return (  
     <div class = "background">
       <main class="Main">
