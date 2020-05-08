@@ -16,7 +16,7 @@ function App() {
   }
 
   return (  
-    <div>
+    <div class = "background">
       <main class="Main">
         <input id="tab1" type="radio" name="tabs" onClick={() => document.getElementById('About').scrollIntoView()}/>
         <label for="tab1">About</label>
@@ -34,6 +34,7 @@ function App() {
       <div id="About">
         <About />
       </div>
+      <hr />
       <div id="Experience"> 
         <Experience />
       </div>

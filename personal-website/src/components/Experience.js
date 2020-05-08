@@ -18,11 +18,11 @@ class Experience extends Component{
                         </div>
                         <div class="ExperienceCardBack">
                             <p>
-                                ● Architected and built a self-service tool for Claims teams using Robotic Process Automation (RPA) to automate payments and receipts
+                                ● Reduced 1-month manual payments/receipts process to 2 hours using Robotic Process Automation
                                 <br />
-                                ● Replaced manual, repetitive processes; reduced business costs for the company
+                                ● Automation has error rate {'<'} 1% for 1000 plus payments reducing business costs by 1000’s 
                                 <br />
-                                ● Used C#, SQL, HTML/CSS, JavaScript, AA Enterprise Client, and Jenkins
+                                ● Used C#, SQL, HTML/CSS, JavaScript, AA Enterprise Client, Jenkins
                             </p>
                         </div>
                     </div>
@@ -38,11 +38,11 @@ class Experience extends Component{
                         </div>
                         <div class="ExperienceCardBack">
                             <p>
-                                ● Designed a web application to interact with X3P (XML 3D Surface Profiles) files
+                                ● Designed CSAFE’s first web application to interact with X3P files
                                 <br />
-                                ● Created an HTTP REST API for abstracting interactions 
+                                ● Structured entire backend along with SQL tables to interact with web app 
                                 <br />
-                                ● Used Java, C#, SQL, HTML/CSS, JavaScript
+                                ● Used Java, C#, SQL, HTML/CSS, JavaScript 
                             </p>
                         </div>
                     </div>
@@ -58,15 +58,11 @@ class Experience extends Component{
                         </div>
                         <div class="ExperienceCardBack">
                             <p>
-                                ● Designed and built a mobile application (iOS & Android) that saves the business 200,000 annually 
+                                ● Designed and built an insurance mobile application that saves FBFS $200,000 annually 
                                 <br />
-                                ● Application won Novarica Research Council Impact Award 
+                                ● Application won 2019 Novarica Research Council Impact Award USA 
                                 <br />
-                                ● Provides easy access for insurance customers information and quick payments
-                                <br />
-                                ● Application published on Google Play and App Store
-                                <br />
-                                ● Used C#, SQL, HTML/CSS, TypeScript, Ionic, and Jenkins 
+                                ● Used C#, SQL, HTML/CSS, TypeScript, Ionic, Jenkins 
                             </p>
                         </div>
                     </div>
@@ -82,10 +78,9 @@ class Experience extends Component{
                         </div>
                         <div class="ExperienceCardBack">
                             <p>
-                                ● Teaching Instructor for Introduction to Web Programming
+                                ● Teaching Instructor for Introduction to Web Programming in JavaScript
                                 <br />
-                                ● Responsibilities include teaching fundamental web design concepts in HTML/CSS and JavaScript, managing
-                                course infrastructure, and mentoring course students through semester projects
+                                ● Managed course infrastructure and mentored students through semester long projects 
                             </p>
                         </div>
                     </div>

@@ -14,9 +14,7 @@ class Languages extends Component{
     render(){
         return(
             <div class="LanguageSummary">
-                <div class="foo">
-                    <span class="letter" data-letter="Languages">Languages</span>
-                </div>
+                <span class="letter" data-letter="Languages">Languages</span>
                 <div class="ProgressBars">
                     <div class="Column">
                         <h4>HTML</h4>
@@ -108,7 +106,7 @@ class Languages extends Component{
 
                 <footer>
                     <br />
-                    {'\u00A9'} 2019 by Rishab Narendra. Proudly created with <a class="ReactLink" onClick={() => this.openReact()}>React</a>.  
+                    {'\u00A9'} 2020 by Rishab Narendra. Proudly created with <a class="ReactLink" onClick={() => this.openReact()}>React</a>.  
                     <i class="fas fa-arrow-circle-up" onClick={() => this.scrollToTop()}></i>
                     <br />
                 </footer>

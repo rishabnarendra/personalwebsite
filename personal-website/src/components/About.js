@@ -28,20 +28,16 @@ class About extends Component{
     render(){
         return(
             <div class="AboutSummary">
-                <div class="foo">
-                    <span class="letter1" data-letter="Hi! I'm Rishab Narendra.">Hi! I'm Rishab Narendra.</span>
-                </div>
-                <div class="foo2">
-                    <span class="letter2" data-letter="Software Developer.">Software Developer.</span>
-                </div>
+                <span class="letter1" data-letter="Hi! I'm Rishab Narendra.">Hi! I'm Rishab Narendra.</span>
+                <span class="letter2" data-letter="Software Developer">Software Developer</span>
                 <div class="wrap">
                     <a class="button" onClick={() => this.openResume()}>View Full Resume</a>
                 </div>
 
-                <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} style={{ height: 45, width: 45 }} bgColor="#ffffff"/>
-                <SocialIcon network="github" onClick={() => this.openGitHub()} style={{ height: 45, width: 45 }} bgColor="rgb(5, 5, 5)"/>
-                <SocialIcon network="instagram" onClick={() => this.openInstagram()} style={{ height: 45, width: 45 }} bgColor="#ffffff"/>
-                <SocialIcon network="facebook" onClick={() => this.openFacebook()} style={{ height: 45, width: 45 }} bgColor="rgb(5, 5, 5)"/>
+                <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
+                <SocialIcon network="github" onClick={() => this.openGitHub()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
+                <SocialIcon network="instagram" onClick={() => this.openInstagram()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
+                <SocialIcon network="facebook" onClick={() => this.openFacebook()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
                 <br /><br />
             </div>  
         );
