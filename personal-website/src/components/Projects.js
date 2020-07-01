@@ -32,6 +32,18 @@ class Projects extends Component{
                 <span class="letter" data-letter="Projects">Projects</span>
                 <div class="Projects">
                     <div class="ProjectCard">
+                        <h3 class="ProjectName">Quick Draw</h3>
+                        <p class="ProjectDescription">
+                            A Convolutional Neural Network (CNN) that identifies user drawn doodles at an accuracy of 95%. Uses Google's Quick
+                            Draw dataset along with Python and Tensorflow. 
+                        </p>
+                        <div class="wrap">
+                            <a class="button">Private Repository</a>
+                        </div>
+                    </div>
+                    <br></br><br></br>
+
+                    <div class="ProjectCard">
                         <h3 class="ProjectName">Sorting Visualizer</h3>
                         <p class="ProjectDescription">
                             A JavaScript app that animates the sorting process for many famous algorithms. 

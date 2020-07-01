@@ -12,10 +12,20 @@ class Experience extends Component{
                     <div class="FlipCard">
                         <div class="ExperienceCard">
                             <div class="ExperienceCardFront">
-                                <h3 class="ExperiencePosition">Software Development Intern</h3>
+                                <h3 class="ExperiencePosition">Software Engineer</h3>
+                                <p><a class="ExperiencePlace">Aptean</a></p>
+                                <p class="ExperienceDate">May 2020 - Present, Bangalore, KA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br /><hr />
+
+                    <div class="FlipCard">
+                        <div class="ExperienceCard">
+                            <div class="ExperienceCardFront">
+                                <h3 class="ExperiencePosition">Software Engineer Intern</h3>
                                 <p><a class="ExperiencePlace">Farm Bureau Financial Services</a></p>
-                                <p class="ExperienceDate">May 2019 - August 2019</p>
-                                <p class="ExperienceLocation">Des Moines, IA</p>
+                                <p class="ExperienceDate">May 2019 - August 2019, Des Moines, IA</p>
                                 <p class="ExperienceCardBack">
                                     ● Reduced 1-month manual payments/receipts process to 2 hours using Robotic Process Automation
                                     <br /><br />
@@ -31,8 +41,8 @@ class Experience extends Component{
                     <div class="FlipCard">
                         <div class="ExperienceCard">
                             <div class="ExperienceCardFront">
-                                <h3 class="ExperiencePosition">Software Development Intern</h3>
-                                <p><a class="ExperiencePlace">Center for Statistics and Applications in Forensic Evidence</a></p>
+                                <h3 class="ExperiencePosition">Software Engineer Intern</h3>
+                                <p><a class="ExperiencePlace">Iowa State University (CSAFE)</a></p>
                                 <p class="ExperienceDate">September 2018 - December 2018, Ames, IA</p>
                             </div>
                             <div class="ExperienceCardBack">
@@ -51,7 +61,7 @@ class Experience extends Component{
                     <div class="FlipCard">
                         <div class="ExperienceCard">
                             <div class="ExperienceCardFront">
-                                <h3 class="ExperiencePosition">Software Development Intern</h3>
+                                <h3 class="ExperiencePosition">Software Engineer Intern</h3>
                                 <p><a class="ExperiencePlace">Farm Bureau Financial Services</a></p>
                                 <p class="ExperienceDate">May 2018 - August 2018, Des Moines, IA</p>
                             </div>

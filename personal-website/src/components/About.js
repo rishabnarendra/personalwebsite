@@ -28,11 +28,11 @@ class About extends Component{
         return(
             <div class="AboutSummary">
                 <span class="letter1" data-letter="Hi! I'm Rishab Narendra.">Hi! I'm Rishab Narendra.</span><br />
-                <span class="letter2" data-letter="Software Developer">Software Developer</span>
+                <span class="letter2" data-letter="Software Engineer">Software Engineer</span>
                 <div class="wrap">
                     <a class="button" onClick={() => this.openResume()}>View Full Resume</a>
                 </div>
-                <img style={{width: '12%'}} src="/profile.jpeg" /><br /><br />
+                <img style={{width: '18em'}} src="/profile.jpeg" /><br /><br />
                 <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
                 <SocialIcon network="github" onClick={() => this.openGitHub()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
                 <SocialIcon network="instagram" onClick={() => this.openInstagram()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
