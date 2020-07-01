@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47cf1b932ed1d2af0ee168680cf09114",
+    "revision": "3f9f1a20e7e68cc21bf9f8dfc658d2c7",
     "url": "/personalwebsite/index.html"
   },
   {
-    "revision": "cedcb13cbf698d051e43",
+    "revision": "87de550807b170012bc1",
     "url": "/personalwebsite/static/css/main.d48ba2c4.chunk.css"
   },
   {
@@ -12,15 +12,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personalwebsite/static/js/2.def554ad.chunk.js"
   },
   {
-    "revision": "cedcb13cbf698d051e43",
-    "url": "/personalwebsite/static/js/main.de86e3ea.chunk.js"
+    "revision": "87de550807b170012bc1",
+    "url": "/personalwebsite/static/js/main.fe3089e1.chunk.js"
   },
   {
     "revision": "1f782c562390b2e61027",
     "url": "/personalwebsite/static/js/runtime~main.29a1488c.js"
   },
   {
-    "revision": "9c2a1a2874a5ab63ae1d8e7f9ec87dd0",
-    "url": "/personalwebsite/static/media/Rishab_Narendra.Resume.9c2a1a28.pdf"
+    "revision": "9847a8e1e169786cf7c5aae1fa265752",
+    "url": "/personalwebsite/static/media/Rishab_Narendra.Resume.9847a8e1.pdf"
   }
 ]);
