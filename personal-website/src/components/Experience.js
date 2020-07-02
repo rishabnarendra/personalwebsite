@@ -1,4 +1,5 @@
 import React, { Component } from 'react'; 
+import Grid from '@material-ui/core/Grid';
 
 class Experience extends Component{
 
@@ -9,7 +10,7 @@ class Experience extends Component{
                     <span class="letter" data-letter="Experience">Experience</span>
                 </div>
                 <div class="ExperienceSummary">
-                    <div class="FlipCard">
+                    {/* <div class="FlipCard">
                         <div class="ExperienceCard">
                             <div class="ExperienceCardFront">
                                 <h3 class="ExperiencePosition">Software Engineer</h3>
@@ -18,14 +19,13 @@ class Experience extends Component{
                             </div>
                         </div>
                     </div>
-                    <br /><br /><hr />
+                    <br /><br /><hr /> */}
 
                     <div class="FlipCard">
                         <div class="ExperienceCard">
                             <div class="ExperienceCardFront">
-                                <h3 class="ExperiencePosition">Software Engineer Intern</h3>
+                                <span><h3 class="ExperiencePosition">Software Engineer Intern</h3><p class="ExperienceDate">May 2019 - Aug 2019, Des Moines, IA</p></span>
                                 <p><a class="ExperiencePlace">Farm Bureau Financial Services</a></p>
-                                <p class="ExperienceDate">May 2019 - August 2019, Des Moines, IA</p>
                                 <p class="ExperienceCardBack">
                                     ● Reduced 1-month manual payments/receipts process to 2 hours using Robotic Process Automation
                                     <br /><br />
@@ -36,14 +36,14 @@ class Experience extends Component{
                             </div>
                         </div>
                     </div>
-                    <br /><br /><hr />
+                    <br /><br />
+                    <i class="fas fa-arrow-circle-up"></i>
 
                     <div class="FlipCard">
                         <div class="ExperienceCard">
                             <div class="ExperienceCardFront">
-                                <h3 class="ExperiencePosition">Software Engineer Intern</h3>
+                                <span><h3 class="ExperiencePosition">Software Engineer Intern</h3><p class="ExperienceDate">Sep 2018 - Dec 2018, Ames, IA</p></span>
                                 <p><a class="ExperiencePlace">Iowa State University (CSAFE)</a></p>
-                                <p class="ExperienceDate">September 2018 - December 2018, Ames, IA</p>
                             </div>
                             <div class="ExperienceCardBack">
                                 <p>
@@ -56,14 +56,14 @@ class Experience extends Component{
                             </div>
                         </div>
                     </div>
-                    <br /><br /><hr />
+                    <br /><br />
+                    <i class="fas fa-arrow-circle-up"></i>
 
                     <div class="FlipCard">
                         <div class="ExperienceCard">
                             <div class="ExperienceCardFront">
-                                <h3 class="ExperiencePosition">Software Engineer Intern</h3>
+                                <span><h3 class="ExperiencePosition">Software Engineer Intern</h3><p class="ExperienceDate">May 2018 - Aug 2018, Des Moines, IA</p></span>
                                 <p><a class="ExperiencePlace">Farm Bureau Financial Services</a></p>
-                                <p class="ExperienceDate">May 2018 - August 2018, Des Moines, IA</p>
                             </div>
                             <div class="ExperienceCardBack">
                                 <p>
@@ -76,14 +76,14 @@ class Experience extends Component{
                             </div>
                         </div>
                     </div>
-                    <br /><br /><hr />
+                    <br /><br />
+                    <i class="fas fa-arrow-circle-up"></i>
 
                     <div class="FlipCard">
                         <div class="ExperienceCard">
                             <div class="ExperienceCardFront">
-                                <h3 class="ExperiencePosition">Teaching Instructor</h3>
+                                <span><h3 class="ExperiencePosition">Teaching Instructor</h3><p class="ExperienceDate">Jan 2018 - May 2018, Ames, IA</p></span>
                                 <p><a class="ExperiencePlace">Iowa State University</a></p>
-                                <p class="ExperienceDate">January 2018 - May 2018, Ames, IA</p>
                             </div>
                             <div class="ExperienceCardBack">
                                 <p>

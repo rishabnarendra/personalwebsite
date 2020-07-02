@@ -172,13 +172,15 @@ a.button:hover {
 }
 
 .ExperienceCardFront{
-  text-align: center;
+  text-align: left;
   color: #ffffff;
 }
 
 .ExperienceCardBack{
+  padding-left: 4%;
   text-align: left;
   color: #ffffff;
+  font-size: 1.1em;
 }
 
 .ExperienceCard {
@@ -190,7 +192,32 @@ a.button:hover {
 }
 
 .ExperiencePosition{
-  font-size: 1.7em;
+  font-size: 2em;
+}
+
+.ExperiencePlace{
+  color: red;
+  font-size: 1.3em;
+}
+
+.ExperienceDate{
+  font-size: 1.1em;
+  text-align: right;
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .ExperienceDate {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+i{
+  padding-left: 50%;
+  font-size: 2.5em;
+  background-color: transparent;
+  color: red;
 }
 
 /* CSS for Projects page */ 
@@ -341,9 +368,10 @@ footer{
   text-decoration: underline;
 }
 
-i{
+footer i{
   float: right;
   font-size: 2.5em;
   background-color: transparent;
   cursor: pointer;
+  color: #fff;
 }
