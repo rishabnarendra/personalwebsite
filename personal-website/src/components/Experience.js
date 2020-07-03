@@ -10,16 +10,20 @@ class Experience extends Component{
                     <span class="letter" data-letter="Experience">Experience</span>
                 </div>
                 <div class="ExperienceSummary">
-                    {/* <div class="FlipCard">
+                    <div class="FlipCard">
                         <div class="ExperienceCard">
                             <div class="ExperienceCardFront">
-                                <h3 class="ExperiencePosition">Software Engineer</h3>
-                                <p><a class="ExperiencePlace">Aptean</a></p>
-                                <p class="ExperienceDate">May 2020 - Present, Bangalore, KA</p>
+                            <span><h3 class="ExperiencePosition">Software Engineer</h3><p class="ExperienceDate">May 2020 - Present, Bangalore, KA</p></span>
+                            <p><a class="ExperiencePlace">Aptean</a></p>
+                            <p class="ExperienceCardBack">
+                                ● Migrating an existing desktop ERP application to the web using C#, VB, .NET, Sencha.js
+                                <br /><br />
+                            </p>
                             </div>
                         </div>
                     </div>
-                    <br /><br /><hr /> */}
+                    <br /><br />
+                    <i class="fas fa-arrow-circle-up"></i>
 
                     <div class="FlipCard">
                         <div class="ExperienceCard">
@@ -31,7 +35,9 @@ class Experience extends Component{
                                     <br /><br />
                                     ● Automation has error rate {'<'} 1% for 1000 plus payments reducing business costs by 1000’s 
                                     <br /><br />
-                                    ● Used C#, SQL, HTML/CSS, JavaScript, AA Enterprise Client, Jenkins
+                                    ● Involved in the complete software life cycle from coding to testing to deployment
+                                    <br /><br />
+                                    ● C#, SQL, HTML/CSS, JavaScript, AA Enterprise Client, and Jenkins
                                 </p>
                             </div>
                         </div>
@@ -51,7 +57,7 @@ class Experience extends Component{
                                     <br /><br />
                                     ● Structured entire backend along with SQL tables to interact with web app 
                                     <br /><br />
-                                    ● Used Java, C#, SQL, HTML/CSS, JavaScript 
+                                    ● Java, C#, Docker, SQL, HTML/CSS, and JavaScript
                                 </p>
                             </div>
                         </div>
@@ -69,9 +75,11 @@ class Experience extends Component{
                                 <p>
                                     ● Designed and built an insurance mobile application that saves FBFS $200,000 annually 
                                     <br /><br />
+                                    ● Involved in the complete software life cycle from coding to testing to deployment
+                                    <br /><br />
                                     ● Application won 2019 Novarica Research Council Impact Award USA 
                                     <br /><br />
-                                    ● Used C#, SQL, HTML/CSS, TypeScript, Ionic, Jenkins 
+                                    ● C#, SQL, HTML/CSS, TypeScript, Ionic, and Jenkins
                                 </p>
                             </div>
                         </div>
