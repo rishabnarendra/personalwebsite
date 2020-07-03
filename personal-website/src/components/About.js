@@ -32,7 +32,7 @@ class About extends Component{
                 <div class="wrap">
                     <a class="button" onClick={() => this.openResume()}>View Full Resume</a>
                 </div>
-                <img style={{width: '18em'}} src="/profile.jpeg" /><br /><br />
+                <img src="./profile.jpeg" style={{width: '18em'}} /><br /><br />
                 <SocialIcon network="linkedin" onClick={() => this.openLinkedIn()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
                 <SocialIcon network="github" onClick={() => this.openGitHub()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
                 <SocialIcon network="instagram" onClick={() => this.openInstagram()} style={{ cursor: 'pointer', height: 45, width: 45, paddingRight: '10px'}} bgColor="#ffffff"/>
